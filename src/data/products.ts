@@ -42,7 +42,7 @@ export const products: Product[] = [
     description: 'Doisprezece trandafiri roșii proaspeți, legați elegant cu raffia naturală.',
     longDescription:
       'Un clasic al dragostei: doisprezece trandafiri roșii selectați zilnic din serele noastre partenere. Tulpini lungi, frunziș verde proaspăt și o legătură discretă din raffia. Ideal pentru aniversări și declarații.',
-    image: img('photo-1518709268805-4e9042af9f23'),
+    image: img('photo-1591886960571-74d43a9d4166'),
     featured: true,
   },
   {
@@ -92,7 +92,7 @@ export const products: Product[] = [
     description: 'Hortensii albastre, voluminoase, într-un buchet de impact.',
     longDescription:
       'Capete generoase de hortensie albastră, aranjate într-un buchet dens. Ideal ca piesă centrală pe masă sau cadou spectaculos.',
-    image: img('photo-1563241527-3004b7ea3fbc'),
+    image: img('photo-1533616688419-b7a585564566'),
   },
   {
     id: '6',
@@ -103,7 +103,7 @@ export const products: Product[] = [
     description: 'Soare într-un buchet — floarea-soarelui cu verdeață rustic.',
     longDescription:
       'Floarea-soarelui proaspătă, acompaniată de verdeață rustic. Atmosferă caldă, de vară la țară. Perfect pentru gazde și zile însorite.',
-    image: img('photo-1597848212624-e593b214d1a3'),
+    image: img('photo-1558618666-fcd25c85cd64'),
     seasonal: true,
   },
   {
@@ -115,7 +115,7 @@ export const products: Product[] = [
     description: 'Frezii albe și crem cu un parfum inconfundabil.',
     longDescription:
       'Frezii delicate, alese pentru aroma lor intensă. Buchet elegant, potrivit pentru nuntă sau un gest rafinat.',
-    image: img('photo-1455659817273-f968077415a9'),
+    image: img('photo-1519378058457-4c29a0a2efac'),
   },
   {
     id: '8',
@@ -126,7 +126,7 @@ export const products: Product[] = [
     description: 'Ranunculus în pasteluri — petale în straturi fine.',
     longDescription:
       'Ranunculus în nuanțe pastel: piersică, lila și crem. Fiecare floare e un mic nor de petale. Preferatul fotografelor de nuntă.',
-    image: img('photo-1487530811176-3780de880c43'),
+    image: img('photo-1546842931-886c185b4c8c'),
     featured: true,
   },
   {
@@ -161,7 +161,7 @@ export const products: Product[] = [
     description: 'Tije de orhidee albe, eleganță minimală.',
     longDescription:
       'Tije de phalaenopsis albe, prezentate ca un buchet vertical, modern. Cadou premium pentru inaugurări și evenimente corporate.',
-    image: img('photo-1561181286-d3fee7f4530d'),
+    image: img('photo-1578662996442-48f60103fc96'),
   },
   {
     id: '12',
@@ -183,7 +183,7 @@ export const products: Product[] = [
     description: 'Flori de câmp românești, aranjate natural.',
     longDescription:
       'Un mix rustic de flori de câmp: mușețel, clopoței, ierburi decorative. Sentiment de vară la munte, adus acasă.',
-    image: img('photo-1496060169243-454f2c7aeade'),
+    image: img('photo-1471899236350-e3016bf1e69e'),
     seasonal: true,
   },
   {
@@ -195,7 +195,7 @@ export const products: Product[] = [
     description: 'Dalii voluminoase în nuanțe de burgundy și coral.',
     longDescription:
       'Dalii de sezon, cu petale dense și formă dramatică. Un buchet de impact pentru cineva special.',
-    image: img('photo-1501004318641-b39e6451bec6'),
+    image: img('photo-1546842931-886c185b4c8c'),
     seasonal: true,
   },
   {
@@ -207,7 +207,7 @@ export const products: Product[] = [
     description: 'Contrast puternic: anemone albe cu centru negru.',
     longDescription:
       'Anemone cu contrast dramatic, aranjate modern. Preferate în aranjamentele contemporane de nuntă.',
-    image: img('photo-1459411552884-841db9b3cc2a'),
+    image: img('photo-1606041008023-472dfb5e530f'),
   },
   {
     id: '16',
@@ -218,7 +218,7 @@ export const products: Product[] = [
     description: 'Compoziție proaspătă într-o vază de sticlă transparentă.',
     longDescription:
       'Aranjament pentru masă de dining: flori de sezon, verdeață și vază inclusă. Gata de așezat — fără bătăi de cap.',
-    image: img('photo-1487530811176-3780de880c43'),
+    image: img('photo-1533616688419-b7a585564566'),
     featured: true,
   },
   {
@@ -230,7 +230,7 @@ export const products: Product[] = [
     description: 'Coș împletit cu flori mixte și verdeață.',
     longDescription:
       'Coș de ratan umplut cu flori de sezon și verdeață. Cadou de vizită, ideal pentru gazde și convalescență.',
-    image: img('photo-1563241527-3004b7ea3fbc'),
+    image: img('photo-1487070183336-b863922373d4'),
   },
   {
     id: '18',
@@ -252,7 +252,7 @@ export const products: Product[] = [
     description: 'Frunze tropicale și accente florale exotice.',
     longDescription:
       'Monstera, calathea și flori exotice într-un aranjament vertical, dramatic. Pentru birouri creative și lofturi.',
-    image: img('photo-1459156212016-c8128e77b1c5'),
+    image: img('photo-1446071103084-c257b5f70672'),
   },
   {
     id: '20',
@@ -309,7 +309,7 @@ export const products: Product[] = [
     description: 'Compoziție orizontală pe suport de lemn natural.',
     longDescription:
       'Aranjament floral pe placă de lemn — stil „table runner” floral. Ideal pentru mese lungi de eveniment.',
-    image: img('photo-1496060169243-454f2c7aeade'),
+    image: img('photo-1501004318641-b39e6451bec6'),
   },
   {
     id: '25',
@@ -331,7 +331,7 @@ export const products: Product[] = [
     description: 'Orhidee phalaenopsis în vas de sticlă cu mușchi.',
     longDescription:
       'Două-trei tije de orhidee în vas transparent cu mușchi și pietricele. Cadou premium, de lungă durată.',
-    image: img('photo-1561181286-d3fee7f4530d'),
+    image: img('photo-1578662996442-48f60103fc96'),
   },
   {
     id: '27',
@@ -354,7 +354,7 @@ export const products: Product[] = [
     description: 'Monstera în ghiveci — statement plant pentru living.',
     longDescription:
       'Monstera deliciosa sănătoasă, în ghiveci de 20–24 cm. Preferă lumină indirectă. Include ghiveci ceramic opțional (+49 RON).',
-    image: img('photo-1459411552884-841db9b3cc2a'),
+    image: img('photo-1497250681960-ef046c08a56e'),
     featured: true,
   },
   {
@@ -366,7 +366,7 @@ export const products: Product[] = [
     description: 'Ficus cu frunze mari, sculpturale.',
     longDescription:
       'Ficus lyrata de interior, înălțime ~80–100 cm. Necesită lumină bună și udare moderată. Starul plantelor de design.',
-    image: img('photo-1459156212016-c8128e77b1c5'),
+    image: img('photo-1446071103084-c257b5f70672'),
   },
   {
     id: '30',
@@ -377,7 +377,7 @@ export const products: Product[] = [
     description: 'Frunze dungate, elegante — iubește umiditatea.',
     longDescription:
       'Calathea orbifolia cu frunze rotunde, dungate argintiu-verde. Ideală pentru băi luminate sau colțuri cu umiditate.',
-    image: img('photo-1463320726281-696a485928f7'),
+    image: img('photo-1416879595882-3373a0480b5b'),
   },
   {
     id: '31',
@@ -410,7 +410,7 @@ export const products: Product[] = [
     description: 'Orhidee înflorită, gata de așezat pe masă.',
     longDescription:
       'Phalaenopsis cu 1–2 tije înflorite, în ghiveci transparent. Include instrucțiuni de îngrijire în română.',
-    image: img('photo-1561181286-d3fee7f4530d'),
+    image: img('photo-1578662996442-48f60103fc96'),
     featured: true,
   },
   {
@@ -445,7 +445,7 @@ export const products: Product[] = [
     description: 'Palmier de interior, aer tropical acasă.',
     longDescription:
       'Dypsis lutescens (areca) — palmier dens, verde deschis. Preferă lumină indirectă și udare regulată.',
-    image: img('photo-1463320726281-696a485928f7'),
+    image: img('photo-1416879595882-3373a0480b5b'),
   },
   {
     id: '37',
@@ -467,7 +467,7 @@ export const products: Product[] = [
     description: 'Douăzeci și patru de trandafiri roșii pentru Ziua Îndrăgostiților.',
     longDescription:
       'Buchet special Valentine\'s: 24 trandafiri roșii premium, ambalaj romantic și bilet personalizat inclus. Comandă din timp în februarie.',
-    image: img('photo-1518709268805-4e9042af9f23'),
+    image: img('photo-1591886960571-74d43a9d4166'),
     occasion: 'Valentine\'s Day',
     featured: true,
   },
@@ -542,7 +542,7 @@ export const products: Product[] = [
     description: 'Pasteluri delicate pentru botez.',
     longDescription:
       'Buchet / aranjament în tonuri pastel (alb, bleu, roz pudrat) pentru botez. Potrivit și ca decor de masă.',
-    image: img('photo-1487530811176-3780de880c43'),
+    image: img('photo-1546842931-886c185b4c8c'),
     occasion: 'Botez',
   },
   {
@@ -566,7 +566,7 @@ export const products: Product[] = [
     description: 'Aranjament de recepție pentru birouri și evenimente.',
     longDescription:
       'Compoziție de impact pentru recepții corporate, showroom-uri și conferințe. Factură pe firmă disponibilă în magazinul real.',
-    image: img('photo-1563241527-3004b7ea3fbc'),
+    image: img('photo-1533616688419-b7a585564566'),
     occasion: 'Corporate',
   },
   {
@@ -578,7 +578,7 @@ export const products: Product[] = [
     description: 'Sărbătorește Dragobetele cu flori românești.',
     longDescription:
       'Buchet inspirat de tradiția Dragobete: flori de sezon, accente roșii și mesaj pe card. Disponibil în februarie.',
-    image: img('photo-1518709268805-4e9042af9f23'),
+    image: img('photo-1518895949257-7621c3c786d7'),
     occasion: 'Dragobete',
     seasonal: true,
   },
@@ -604,7 +604,7 @@ export const products: Product[] = [
     description: 'Surpriză colorată pentru ziua de naștere.',
     longDescription:
       'Mix festiv, colorat, cu balon mic opțional. Spune-ne culoarea preferată a sărbătoritului și adaptăm buchetul.',
-    image: img('photo-1597848212624-e593b214d1a3'),
+    image: img('photo-1558618666-fcd25c85cd64'),
     occasion: 'Zi de naștere',
     featured: true,
   },
@@ -617,7 +617,7 @@ export const products: Product[] = [
     description: 'Plantă + aranjament pentru inaugurarea casei.',
     longDescription:
       'Combo: plantă de interior ușor de îngrijit + aranjament floral mic. Mesaj „Felicitări pentru casa nouă!” inclus.',
-    image: img('photo-1459156212016-c8128e77b1c5'),
+    image: img('photo-1446071103084-c257b5f70672'),
     occasion: 'Casa nouă',
   },
 ]

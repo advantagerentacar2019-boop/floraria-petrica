@@ -3,9 +3,9 @@ import { ProductCard } from '../components/ProductCard'
 import { getFeatured, getSeasonal } from '../data/products'
 
 const HERO =
-  'https://images.unsplash.com/photo-1487530811176-3780de880c43?auto=format&fit=crop&w=1800&q=80'
+  'https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=1800&q=80'
 const ABOUT =
-  'https://images.unsplash.com/photo-1563241527-3004b7ea3fbc?auto=format&fit=crop&w=1200&q=80'
+  'https://images.unsplash.com/photo-1533616688419-b7a585564566?auto=format&fit=crop&w=1200&q=80'
 
 export function Home() {
   const featured = getFeatured().slice(0, 8)
