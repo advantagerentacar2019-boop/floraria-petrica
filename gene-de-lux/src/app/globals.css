@@ -1,0 +1,56 @@
+:root {
+  --ink: #0c0908;
+  --ink-2: #16100e;
+  --cream: #f6efe6;
+  --muted: #b9aaa0;
+  --champagne: #d7b48a;
+  --blush: #c98b7b;
+  --glow: color-mix(in oklab, var(--champagne) 28%, transparent);
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Outfit", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(1200px 700px at 80% -10%, var(--glow), transparent 55%),
+    radial-gradient(900px 600px at 10% 20%, color-mix(in oklab, var(--blush) 18%, transparent), transparent 50%),
+    linear-gradient(165deg, var(--ink) 0%, var(--ink-2) 48%, #1a1210 100%);
+  color: var(--cream);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--champagne) 45%, transparent);
+  color: #1a0f0c;
+}
+
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.shell > main {
+  flex: 1;
+}

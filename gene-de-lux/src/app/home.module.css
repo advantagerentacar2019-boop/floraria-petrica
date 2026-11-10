@@ -1,0 +1,260 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+}
+
+.heroMedia {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      115deg,
+      color-mix(in oklab, #070504 88%, transparent) 12%,
+      color-mix(in oklab, #070504 35%, transparent) 48%,
+      color-mix(in oklab, #1a0f12 55%, transparent) 100%
+    ),
+    url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=2000&q=80")
+      center / cover no-repeat;
+  transform: scale(1.04);
+  animation: heroZoom 12s ease-out both;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding: clamp(5.5rem, 14vh, 8rem) clamp(1.2rem, 4vw, 3rem) clamp(2.5rem, 6vh, 4rem);
+  max-width: 46rem;
+  animation: rise 900ms ease both;
+}
+
+.eyebrow {
+  margin: 0 0 0.85rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--champagne);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(3.4rem, 10vw, 6.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+.title span {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.lead {
+  margin: 1.25rem 0 0;
+  max-width: 34rem;
+  color: color-mix(in oklab, var(--cream) 86%, transparent);
+  font-size: 1.05rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.6rem;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.9rem 1.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.primary {
+  background: linear-gradient(120deg, var(--champagne), var(--blush));
+  color: #1a0f0c;
+}
+
+.secondary {
+  border: 1px solid color-mix(in oklab, var(--champagne) 55%, transparent);
+  color: var(--cream);
+}
+
+.band {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.2rem, 4vw, 3rem);
+  border-top: 1px solid color-mix(in oklab, var(--champagne) 16%, transparent);
+}
+
+.bandText h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+}
+
+.bandText p {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.facts li {
+  display: grid;
+  gap: 0.2rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--champagne) 18%, transparent);
+}
+
+.facts strong {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  font-weight: 500;
+}
+
+.servicesPreview {
+  padding: 0 clamp(1.2rem, 4vw, 3rem) clamp(3rem, 7vw, 4.5rem);
+}
+
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.sectionHead h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 500;
+}
+
+.sectionHead a {
+  color: var(--champagne);
+  text-decoration: none;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.serviceCard {
+  padding: 1.25rem 1.15rem 1.35rem;
+  border-top: 1px solid color-mix(in oklab, var(--champagne) 35%, transparent);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, #221714 55%, transparent),
+    transparent
+  );
+  animation: rise 800ms ease both;
+}
+
+.serviceCard h3 {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.serviceCard p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+}
+
+.tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blush);
+}
+
+.price {
+  color: var(--champagne) !important;
+  letter-spacing: 0.08em;
+}
+
+.ctaBlock {
+  margin: 0 clamp(1.2rem, 4vw, 3rem) 3rem;
+  padding: clamp(2rem, 5vw, 3rem);
+  background:
+    radial-gradient(600px 220px at 20% 0%, var(--glow), transparent 60%),
+    linear-gradient(135deg, #1b1210, #120d0c);
+  border: 1px solid color-mix(in oklab, var(--champagne) 22%, transparent);
+  animation: rise 900ms ease both;
+}
+
+.ctaBlock h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 500;
+}
+
+.ctaBlock p {
+  margin: 0.85rem 0 1.3rem;
+  max-width: 36rem;
+  color: var(--muted);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1.12);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+
+@media (max-width: 900px) {
+  .band,
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+}
