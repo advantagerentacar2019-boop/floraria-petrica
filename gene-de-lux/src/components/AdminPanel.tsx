@@ -36,7 +36,6 @@ function formatWhen(iso: string) {
 
 export function AdminPanel() {
   const [authed, setAuthed] = useState(false);
-  const [sampleAuth, setSampleAuth] = useState(false);
   const [password, setPassword] = useState("");
   const [appointments, setAppointments] = useState<Appointment[]>([]);
   const [slots, setSlots] = useState<Slot[]>([]);
@@ -86,15 +85,11 @@ export function AdminPanel() {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ password }),
       });
-      const data = (await res.json()) as {
-        error?: string;
-        sampleAuth?: boolean;
-      };
+      const data = (await res.json()) as { error?: string };
       if (!res.ok) {
         setError(data.error ?? "Login eșuat.");
         return;
       }
-      setSampleAuth(Boolean(data.sampleAuth));
       setPassword("");
       await load();
     });
@@ -179,10 +174,6 @@ export function AdminPanel() {
         <button type="submit" disabled={pending}>
           {pending ? "…" : "Intră"}
         </button>
-        <p className={styles.hint}>
-          Demo local: dacă nu ai setat încă parola în Cursor Secrets, folosește
-          parola de sample din mediul de dezvoltare.
-        </p>
       </form>
     );
   }
@@ -193,11 +184,6 @@ export function AdminPanel() {
         <div>
           <h1>Programările tale</h1>
           <p>Gestionează calendarul · Rovinari</p>
-          {sampleAuth ? (
-            <p className={styles.hint}>
-              Rulează pe date sample până adaugi parola reală în Secrets.
-            </p>
-          ) : null}
         </div>
         <button type="button" className={styles.ghost} onClick={logout}>
           Ieșire

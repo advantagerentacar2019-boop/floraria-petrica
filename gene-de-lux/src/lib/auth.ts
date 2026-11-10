@@ -4,23 +4,35 @@ import { cookies } from "next/headers";
 const COOKIE = "gdl_admin";
 const MAX_AGE_SEC = 60 * 60 * 12;
 
-function adminPassword(): string {
-  const fromEnv = process.env.ADMIN_PASSWORD?.trim();
-  if (fromEnv) return fromEnv;
-  // Local / sample fallback until the user sets ADMIN_PASSWORD in Cursor secrets
-  return "demo-admin";
+export type AuthConfigError = "missing_admin_password" | "missing_session_secret";
+
+function readSecret(name: "ADMIN_PASSWORD" | "ADMIN_SESSION_SECRET"): string | null {
+  const value = process.env[name]?.trim() ?? "";
+  return value.length > 0 ? value : null;
 }
 
-export function isSampleAdminAuth(): boolean {
-  return !process.env.ADMIN_PASSWORD?.trim();
+/** Admin auth is available only when both secrets are configured. */
+export function getAuthConfigError(): AuthConfigError | null {
+  if (!readSecret("ADMIN_PASSWORD")) return "missing_admin_password";
+  if (!readSecret("ADMIN_SESSION_SECRET")) return "missing_session_secret";
+  return null;
+}
+
+function sessionSigningKey(): string {
+  const key = readSecret("ADMIN_SESSION_SECRET");
+  if (!key) {
+    throw new Error("ADMIN_SESSION_SECRET is not configured");
+  }
+  return key;
 }
 
 function sign(value: string): string {
-  return createHmac("sha256", adminPassword()).update(value).digest("hex");
+  return createHmac("sha256", sessionSigningKey()).update(value).digest("hex");
 }
 
 export function verifyPassword(password: string): boolean {
-  const expected = adminPassword();
+  const expected = readSecret("ADMIN_PASSWORD");
+  if (!expected) return false;
   const a = Buffer.from(password);
   const b = Buffer.from(expected);
   if (a.length !== b.length) return false;
@@ -58,12 +70,13 @@ export function clearSessionCookieOptions() {
 
 export function readTokenValid(token: string | undefined): boolean {
   if (!token) return false;
+  if (getAuthConfigError()) return false;
   const [exp, sig] = token.split(".");
   if (!exp || !sig) return false;
   const expNum = Number(exp);
   if (!Number.isFinite(expNum) || expNum * 1000 < Date.now()) return false;
-  const expected = sign(exp);
   try {
+    const expected = sign(exp);
     return timingSafeEqual(Buffer.from(sig), Buffer.from(expected));
   } catch {
     return false;
