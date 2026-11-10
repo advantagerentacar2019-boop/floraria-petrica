@@ -1,0 +1,190 @@
+.login,
+.panel {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 6.5rem clamp(1.2rem, 4vw, 2rem) 3rem;
+  animation: rise 700ms ease both;
+}
+
+.login {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 420px;
+}
+
+.login h1,
+.panel h1,
+.section h2,
+.card h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--cream);
+}
+
+.login p,
+.panel p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.login label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.login label span {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--champagne);
+}
+
+.login input,
+.card input,
+.card select {
+  border: 1px solid color-mix(in oklab, var(--champagne) 28%, transparent);
+  background: color-mix(in oklab, #120d0c 88%, transparent);
+  color: var(--cream);
+  padding: 0.8rem 0.95rem;
+  font: inherit;
+}
+
+.login button,
+.card button,
+.actions button,
+.ghost {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.login button,
+.card button {
+  justify-self: start;
+  padding: 0.8rem 1.2rem;
+  background: linear-gradient(120deg, var(--champagne), var(--blush));
+  color: #1a0f0c;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.ghost {
+  background: transparent;
+  color: var(--champagne);
+  border: 1px solid color-mix(in oklab, var(--champagne) 45%, transparent);
+  padding: 0.55rem 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.section {
+  margin-bottom: 1.75rem;
+}
+
+.list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid color-mix(in oklab, var(--champagne) 20%, transparent);
+  background: color-mix(in oklab, #100c0b 70%, transparent);
+}
+
+.item p {
+  margin: 0.25rem 0 0;
+}
+
+.notes {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--champagne);
+}
+
+.actions {
+  display: flex;
+  align-items: flex-start;
+}
+
+.actions button {
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid color-mix(in oklab, var(--blush) 50%, transparent);
+  padding: 0.45rem 0.7rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.empty {
+  color: var(--muted);
+  border: 1px dashed color-mix(in oklab, var(--champagne) 25%, transparent);
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem;
+  border: 1px solid color-mix(in oklab, var(--champagne) 20%, transparent);
+}
+
+.error {
+  color: #ffb4a8;
+}
+
+.hint {
+  color: var(--muted) !important;
+  font-size: 0.85rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .grid,
+  .item {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+}

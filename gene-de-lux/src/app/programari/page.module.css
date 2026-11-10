@@ -1,0 +1,29 @@
+.page {
+  padding: 6.5rem clamp(1.2rem, 4vw, 3rem) 3rem;
+  width: min(760px, 100%);
+}
+
+.head p {
+  margin: 0;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--champagne);
+}
+
+.head h1 {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.lead {
+  margin: 0.9rem 0 1.6rem !important;
+  color: var(--muted) !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  max-width: 36rem;
+}

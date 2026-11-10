@@ -1,0 +1,148 @@
+.form {
+  display: grid;
+  gap: 1.35rem;
+  animation: rise 700ms ease both;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field span,
+.slots legend {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--champagne);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid color-mix(in oklab, var(--champagne) 28%, transparent);
+  background: color-mix(in oklab, #120d0c 88%, transparent);
+  color: var(--cream);
+  padding: 0.85rem 1rem;
+  font: inherit;
+  border-radius: 0;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.slots {
+  border: 1px solid color-mix(in oklab, var(--champagne) 22%, transparent);
+  padding: 1rem 1rem 1.15rem;
+  margin: 0;
+}
+
+.day + .day {
+  margin-top: 1rem;
+}
+
+.day h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--cream);
+}
+
+.slotRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.slot {
+  min-width: 4.6rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid color-mix(in oklab, var(--champagne) 35%, transparent);
+  background: transparent;
+  color: var(--cream);
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.slot:hover {
+  transform: translateY(-1px);
+  border-color: var(--champagne);
+}
+
+.slotActive {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--champagne) 55%, #3a2418),
+    color-mix(in oklab, var(--blush) 40%, #2a1512)
+  );
+  color: #1a0f0c;
+  border-color: transparent;
+}
+
+.hint {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+}
+
+.error {
+  margin: 0;
+  color: #ffb4a8;
+}
+
+.success {
+  margin: 0;
+  color: #d7f5c8;
+}
+
+.submit {
+  justify-self: start;
+  padding: 0.95rem 1.5rem;
+  border: 0;
+  background: linear-gradient(120deg, var(--champagne), var(--blush));
+  color: #1a0f0c;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: filter 180ms ease, transform 180ms ease;
+}
+
+.submit:hover:not(:disabled) {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
